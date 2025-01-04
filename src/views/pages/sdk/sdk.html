@@ -143,7 +143,9 @@
                         data-scroll-to="#contact-us-form-sdk">
                         <div class="" style="margin: auto;">Become a Partner</div>
                     </a>
-                    <a role="button" class="primary-btn --transparent --hero-sdk-contribute text-decoration-none js-scroll-to" data-scroll-to="#sdk-implementation-section">
+                    <a role="button"
+                        class="primary-btn --transparent --hero-sdk-contribute text-decoration-none js-scroll-to"
+                        data-scroll-to="#sdk-implementation-section">
                         <div class="">Build</div>
                         <img src="../../../assets/icons/arrow-right-icon.svg" alt="arrow right">
                     </a>
@@ -161,24 +163,59 @@
             </div>
         </section>
 
-        <section class="col-12 sdk-partners-slider-section" data-aos="fade-up" data-aos-duration="3000">
+        <section class="col-12 sdk-partners-collapsed-section mb-5" data-aos="fade-up" data-aos-duration="3000">
             <h3 class="h-2-home --small mb-5">Trusted By</h3>
-            <div class="sdk-partners-slider align-self-center">
-                <img src="../../../assets/images/logotypes/relai.svg" alt="Relai" class="img-fluid w-100">
-                <img src="../../../assets/images/logotypes/cake_wallet.svg" alt="Cake Wallet" class="img-fluid w-100">
-                <img src="../../../assets/images/logotypes/crowdhealth.svg" alt="CrowdHealth" class="img-fluid w-100">
-                <img src="../../../assets/images/logotypes/bitBox.svg" alt="BitBox" class="img-fluid w-100">
-                <img src="../../../assets/images/logotypes/green.svg" alt="Green" class="img-fluid w-100">
-                <img src="../../../assets/images/logotypes/lipa.svg" alt="lipa" class="img-fluid w-100">
-                <img src="../../../assets/images/logotypes/bringin.svg" alt="Bringin" class="img-fluid w-100">
-                <img src="../../../assets/images/logotypes/volt.svg" alt="Volt" class="img-fluid w-100">
-                <img src="../../../assets/images/logotypes/elysiumLab.svg" alt="ElysiumLab" class="img-fluid w-100">
-                <img src="../../../assets/images/logotypes/picnic_groups.svg" alt="Picnic Groups"
-                    class="img-fluid w-100">
-                <img src="../../../assets/images/logotypes/santimo.svg" alt="Satimoto" class="img-fluid w-100">
-                <img src="../../../assets/images/logotypes/kumuly.svg" alt="Kumuly" class="img-fluid w-100">
-                <img src="../../../assets/images/logotypes/flash.svg" alt="flash" class="img-fluid w-100">
-                <img src="../../../assets/images/logotypes/invebit.svg" alt="Invebit" class="img-fluid w-100">
+
+            <div class="d-flex flex-wrap sdk-partners-list collapsed js-collapsed-partners">
+                <div class="d-flex align-items-center justify-content-center sdk-partners-list-item">
+                    <img src="../../../assets/images/logotypes/klever.svg" alt="Klever" class="img-fluid w-100">
+                </div>
+                <div class="d-flex align-items-center justify-content-center sdk-partners-list-item">
+                    <img src="../../../assets/images/logotypes/relai.svg" alt="Relai" class="img-fluid w-100">
+                </div>
+                <div class="d-flex align-items-center justify-content-center sdk-partners-list-item">
+                    <img src="../../../assets/images/logotypes/cake_wallet.svg" alt="Cake Wallet"
+                        class="img-fluid w-100">
+                </div>
+                <div class="d-flex align-items-center justify-content-center sdk-partners-list-item">
+                    <img src="../../../assets/images/logotypes/crowdhealth.svg" alt="CrowdHealth"
+                        class="img-fluid w-100">
+                </div>
+                <div class="d-flex align-items-center justify-content-center sdk-partners-list-item">
+                    <img src="../../../assets/images/logotypes/bitBox.svg" alt="BitBox" class="img-fluid w-100">
+                </div>
+                <div class="d-flex align-items-center justify-content-center sdk-partners-list-item">
+                    <img src="../../../assets/images/logotypes/green.svg" alt="Green" class="img-fluid w-100">
+                </div>
+                <div class="d-flex align-items-center justify-content-center sdk-partners-list-item">
+                    <img src="../../../assets/images/logotypes/yopaki.svg" alt="yopaki" class="img-fluid w-100">
+                </div>
+                <div class="d-flex align-items-center justify-content-center sdk-partners-list-item">
+                    <img src="../../../assets/images/logotypes/volt.svg" alt="Volt" class="img-fluid w-100">
+                </div>
+                <div class="d-flex align-items-center justify-content-center sdk-partners-list-item">
+                    <img src="../../../assets/images/logotypes/elysiumLab.svg" alt="ElysiumLab" class="img-fluid w-100">
+                </div>
+                <div class="d-flex align-items-center justify-content-center sdk-partners-list-item">
+                    <img src="../../../assets/images/logotypes/bringin.svg" alt="Bringin" class="img-fluid w-100">
+                </div>
+                <div class="d-flex align-items-center justify-content-center sdk-partners-list-item">
+                    <img src="../../../assets/images/logotypes/flash.svg" alt="flash" class="img-fluid w-100">
+                </div>
+                <div class="d-flex align-items-center justify-content-center sdk-partners-list-item">
+                    <img src="../../../assets/images/logotypes/lipa.svg" alt="lipa" class="img-fluid w-100">
+                </div>
+                <div class="d-flex align-items-center justify-content-center sdk-partners-list-item">
+                    <img src="../../../assets/images/logotypes/picnic_groups.svg" alt="Picnic Groups"
+                        class="img-fluid w-100">
+                </div>
+                <div class="d-flex align-items-center justify-content-center sdk-partners-list-item">
+                    <img src="../../../assets/images/logotypes/invebit.svg" alt="Invebit" class="img-fluid w-100">
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center pt-5 pb-5 mb-5 js-collapse-btn" role="button">
+                <img class="arrow js-arrow" src="../../../assets/icons/arrow-down-icon.svg" alt="arrow down">
             </div>
         </section>
 
@@ -326,10 +363,16 @@
 
             <div class="col-12 col-lg-7 mb-5 mb-lg-0">
                 <div class="contact-us-info-block">
-                    <h2 class="h-2-home mb-4"><%if (form_topic == "sdk-design-partner") { %>Become a Design Partner<% } %><%if (form_topic == "sdk-liquid-api-key") { %>Get an API key<% } %></h2>
-                    <p class="home-text --text-2">Interested in becoming a design partner<%if (form_topic == "sdk-liquid-api-key") { %> for the Nodeless implementation<% } %>?
-                        <br>
-                        Please<%if (form_topic == "sdk-design-partner") { %> get in touch.<% } %><%if (form_topic == "sdk-liquid-api-key") { %> fill this form to receive an API key.<% } %>
+                    <h2 class="h-2-home mb-4">
+                        <%if (form_topic=="sdk-design-partner" ) { %>Become a Design Partner<% } %>
+                                <%if (form_topic=="sdk-liquid-api-key" ) { %>Get an API key<% } %>
+                    </h2>
+                    <p class="home-text --text-2">Interested in becoming a design partner<%if
+                            (form_topic=="sdk-liquid-api-key" ) { %> for the Nodeless implementation<% } %>?
+                                <br>
+                                Please<%if (form_topic=="sdk-design-partner" ) { %> get in touch.<% } %>
+                                        <%if (form_topic=="sdk-liquid-api-key" ) { %> fill this form to receive an API
+                                            key.<% } %>
                     </p>
                 </div>
 
@@ -411,8 +454,11 @@
                                             <select class="form-select mt-3" name="contact_type" required>
                                                 <option disabled value="" class="d-none">Topic</option>
                                                 <option value="mobile">Mobile</option>
-                                                <option <% if (form_topic == "sdk-design-partner") { %>selected <% } %>value="sdk-design-partner">SDK Design Partner</option>
-                                                <option <% if (form_topic == "sdk-liquid-api-key") { %>selected <% } %>value="sdk-liquid-api-key">API Key for the Nodeless Implementation</option>
+                                                <option <% if (form_topic=="sdk-design-partner" ) { %>selected <% } %>
+                                                        value="sdk-design-partner">SDK Design Partner</option>
+                                                <option <% if (form_topic=="sdk-liquid-api-key" ) { %>selected <% } %>
+                                                        value="sdk-liquid-api-key">API Key for the Nodeless
+                                                        Implementation</option>
                                                 <option value="lsp-partner">LSP Partner</option>
                                                 <option value="other">Other</option>
                                             </select>
@@ -422,7 +468,8 @@
 
                                         <div class="col-md-12">
                                             <textarea class="form-control" type="text" name="message" rows="4" cols="50"
-                                                placeholder="Message" required><% if (form_topic == "sdk-liquid-api-key") { %>I would like to receive an API key for the Nodeless implementation.<% } %></textarea>
+                                                placeholder="Message"
+                                                required><% if (form_topic == "sdk-liquid-api-key") { %>I would like to receive an API key for the Nodeless implementation.<% } %></textarea>
                                             <div class="valid-feedback"></div>
                                             <div class="invalid-feedback">Please enter a message </div>
                                         </div>
@@ -454,7 +501,8 @@
                                                 role="alert" aria-live="assertive" aria-atomic="true">
                                                 <div class="d-flex">
                                                     <div class="toast-body">
-                                                        Failed to send message, please email us at contact@breez.technology
+                                                        Failed to send message, please email us at
+                                                        contact@breez.technology
                                                     </div>
                                                     <button type="button" class="btn-close btn-close-white me-2 m-auto"
                                                         data-bs-dismiss="toast" aria-label="Close"></button>

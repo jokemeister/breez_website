@@ -3,9 +3,9 @@ import jquery from 'jquery';
 window.jQuery = jquery;
 window.$ = jquery;
 
-import './styles/main.scss'
+import './styles/main.scss';
 
-import 'bootstrap/dist/js/bootstrap.bundle'
+import 'bootstrap/dist/js/bootstrap.bundle';
 // slick
 import 'slick-carousel';
 
@@ -14,29 +14,29 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init();
 
-import './javascript/contact-us-form'
-import './javascript/scroll-to-element'
-import './javascript/active-header-link'
-import './javascript/burger-toggler'
+import './javascript/contact-us-form';
+import './javascript/scroll-to-element';
+import './javascript/active-header-link';
+import './javascript/burger-toggler';
 
-
-import './javascript/mobile-os-checker'
+import './javascript/mobile-os-checker';
 
 // home, mobile & sdk section sliders
-import './javascript/mobile-section-slider'
-import './javascript/sdk-section-slider'
+import './javascript/mobile-section-slider';
+import './javascript/sdk-section-slider';
 
 // mobile page frame slider
-import './javascript/mobile-frame-slider'
-import './javascript/particles-bitcoin'
+import './javascript/mobile-frame-slider';
+import './javascript/particles-bitcoin';
 
 // sdk page slider
-import './javascript/sdk-partners-slider'
+import './javascript/sdk-partners-slider';
 
-import './javascript/spinner-loader'
+import './javascript/sdk-section-collapsed';
 
-import { load } from 'recaptcha-v3'
+import './javascript/spinner-loader';
 
+import { load } from 'recaptcha-v3';
 
 // /////// decrease time loader
 //
@@ -66,12 +66,10 @@ import { load } from 'recaptcha-v3'
 //     spinnerWrapperEl.style.display = 'none';
 // });
 
-
-
 load('6LcXRpgUAAAAAME7hVWwxUI0BvOuz6QEocYmUpIa').then((recaptcha) => {
-    recaptcha.execute('contact').then((token) => {
-        var recaptchaResponse = document.getElementById('recaptcha_response');
-        recaptchaResponse.value = token;
-        console.log(token) // Will print the token
-    })
-})
+  recaptcha.execute('contact').then((token) => {
+    var recaptchaResponse = document.getElementById('recaptcha_response');
+    recaptchaResponse.value = token;
+    console.log(token); // Will print the token
+  });
+});
